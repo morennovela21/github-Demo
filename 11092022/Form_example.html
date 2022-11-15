@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+
+<body>
+    <h1>HTML forms</h1>
+    <br />
+
+    <!--With Label Form Name-->
+    <form>
+        <label for="firstName">First Name:</label>
+        <input type="text" name="firstName" size="20" maxlength="10" minlength="3" placeholder="First Name"
+            id="firstName" value="" />
+
+        <br><br>
+        <!--With Label Form Name-->
+        <label for="fname">First name:</label>
+        <br>
+        <input type="text" id="fname" name="fname" placeholder="First Name">
+        <br>
+
+        <label for="lname">Last name:</label>
+        <br>
+
+        <input type="text" id="lname" name="lname" placeholder="Last Name">
+        <br><br>
+
+        <!--for PASSWORD-->
+        <label for="password">Password:</label>
+        <input type="password" name="password">
+
+        <br><br><br>
+
+        <!--for FEEDBACK-->
+        <label for="feedback">
+            Feedback:</label>
+        <br />
+        <textarea name="feedback" id="feedback" cols="30" rows="10" placeholder="submit your feedback"></textarea>
+
+        <br><br>
+
+        <!--CHECKBOXES-->
+        Programming language: <br />
+
+        <br>
+        <label for="javascript">javascript</label>
+        <input type="checkbox" name="progLanguage" id="javascript" value="javascript" checked>
+
+        <label for="Php">Php</label>
+        <input type="checkbox" name="progLanguage" id="Php" value="Php">
+
+        <label for="Python">Python</label>
+        <input type="checkbox" name="progLanguage" id="Python" value="Python">
+
+        <br><br><br>
+
+        <!--for RADIO buttons with break line-->
+        <p>Choose your favorite Web language:</p>
+
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+
+        <br>
+        <!--for RADIO buttons without break line-->
+        <p>Enter your name:</p>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" value="male">
+
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female" value="female">
+
+        <label for="Prefer not to say">Prefer not to say</label>
+        <input type="radio" name="gender" id="dontSay" value="Prefer not to say">
+
+        <br><br>
+        <!--For CHECKBOXES with break line-->
+        <p>The things I have:</p>
+        <form>
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1"> I have a bike</label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle2"> I have a car</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <label for="vehicle3"> I have a boat</label>
+
+
+            <br /> <br />
+            <!--for DROPDOWN WITH selected disabled and Please Select Option-->
+            <label for="dropdown">Web Technology</label>
+
+            <select size=1 name="dropdown" id="dropdown">
+                <option selected disabled>Please select</option>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="javascript">JavaScript</option>
+            </select>
+            <br><br>
+            <input type="submit">
+
+            <br><br>
+            <!--for DROPDOWN WITHOUT selected disabled and Please Select Option-->
+            <label for="cars">Choose a car:</label>
+            <select id="cars" name="cars" size="1">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="fiat">Fiat</option>
+                <option value="audi">Audi</option>
+            </select><br><br>
+            <input type="submit">
+
+            <br><br>
+            <!--for file upload-->
+            Upload profile picture:
+            <input type="file" name="fileupload" accept="image/*">
+            <br><br><br><br>
+
+            <!--For Attributes of Time,Date,Range, Color, Number-->
+            Pick A Time:
+            <input type="time">
+            <br><br>
+            Pick A day:
+            <input type="Day">
+
+            <br><br>
+            Pick A Week:
+            <input type="week">
+            <br><br>
+            Pick A Month:
+            <input type="Month">
+            <br><br>
+            Enter Birthday:
+            <input type="date">
+            <br><br>
+            Range from 0 to 50:
+            <input type="range" name="range" max="50" min="0" step="10" value="0">
+            <br><br>
+            Pick a Color:
+            <input type="color" name="color" value="#42C5FF">
+            <br><br>
+            Enter a Number:
+            <input type="number" min="10" max="99">
+
+            <br><br><br><br>
+            
+            <!--for button-->
+            <input type="button" value="buttom 1">
+            <br><br>
+            <input type="reset" value="Reset">
+            <br><br>
+            <input type="submit" value="Register">
+
+
+            <br><br><br><br> <br><br>
+        </form>
+</body>
+
+</html>
