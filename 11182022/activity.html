@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOLY GRAIL LAYOUT WITH FORMS</title>
+    <link rel="stylesheet" href="activity.css">
+</head>
+
+<body>
+    <header>Header</header>
+    <main>
+        <nav>Nav</nav>
+        <article>
+            <form>
+                <div class="container">
+
+                    <div class="left">
+                        <div class="field">
+                            <label for="name">Name</label>
+                            <input type="text" id="Name">
+                        </div>
+                        <div class="field">
+                            <label for="phone">Phone</label>
+                            <input type="text" id="phone">
+                        </div>
+                        <div class="field">
+                            <label for="email">Email</label>
+                            <input type="email" id="email">
+                        </div>
+                        <div class="field">
+                            <label for="pickdate_time">Pick Date/Time</label>
+                            <input type="datetime-local" id="pickdate_time">
+                        </div>
+                        <div class="field">
+                            <label for="pickup_place">Pickup Place</label>
+                            <select class="field" id="pickup_place" name="pickup_place">
+                                <option value="select_one">Select One</option>
+                                <option value="cebu">Cebu</option>
+                                <option value="manila">Manila</option>
+                                <option value="cdo">Cdo</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label for="dropoff_place">DropOff Place</label>
+                            <input type="text" id="dropoff_place">
+                        </div>
+                        <br><br>
+                        <div class="btn-container">
+                            <input type="submit" value="Submit Booking">
+                        </div>
+                        <br>
+                    </div>
+                    <!--For 2nd Column-->
+                    <div class="right">
+                        Which vehicle do you require?
+                        <br><br>
+                        <input type="radio" name="van" id="van">
+                        <label for="van">Van</label>
+                        <br>
+                        <input type="radio" name="jeepney" id="jeepney">
+                        <label for="css">Jeepney</label>
+                        <br>
+                        <input type="radio" name="tricycle" id="tricycle">
+                        <label for="tricycle">Tricycle</label>
+                        <br><br>
+                        Extra
+                        <br><br>
+                        <input type="checkbox" name="baby_seat" id="baby_seat">
+                        <label for="baby_seat">Baby Seat</label>
+                        <br>
+                        <input type="checkbox" name="wheelchair" id="wheelchair">
+                        <label for="wheelchair">wheelChair Access</label>
+                        <br>
+                        <input type="checkbox" name="stock_tip" id="stock_tip">
+                        <label for="stock_tip">Stock Tip</label>
+                        <br>
+                    </div>
+                </div>
+            </form>
+        </article>
+        <aside>Aside</aside>
+    </main>
+    <footer>Footer</footer>
+</body>
+
+</html>
