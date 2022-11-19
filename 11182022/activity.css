@@ -1,0 +1,126 @@
+* 
+{
+    box-sizing: border-box;
+}
+header,
+footer 
+{
+    height: 20vh;
+    background-color: yellowgreen;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-size: 18px;
+    font-weight: 400px;
+}
+main 
+{
+    height: 70vh;
+    display: flex;
+}
+aside 
+{
+    width: 20%;
+    padding: 30px;
+    background-color: cornsilk;
+    font-size: 18px;
+    font-weight: 400px;
+}
+
+nav 
+{
+    width: 20%;
+    padding: 30px;
+    background-color: powderblue;
+    order: calc(1);
+    font-size: 18px;
+    font-weight: 400px;
+}
+article 
+{
+    width: 60%;
+    padding: 30px;
+    font-size: 18px;
+    font-weight: 400px;
+}
+body 
+{
+    margin: 0;
+}
+.btn-container 
+{
+    text-align: right;
+}
+
+input[type="submit"] 
+{
+    border: 0;
+    padding: 12px;
+    background-color: gray;
+    color: #fff;
+    font-size: 14px;
+}
+input[type="submit"]:hover 
+{
+    cursor: pointer;
+}
+form 
+{
+    background-color: #fff;
+}
+
+.container 
+{
+    display: flex;
+    column-gap: 30px;
+    margin: 0;
+   
+    /* gap column-gap
+    row-gap */
+}
+.container 
+{
+    background-color: palegoldenrod;
+    padding-top: 40px;
+   
+}
+select 
+{
+    width: 50%;
+    padding: 10px 10px;
+}
+
+.left 
+{
+    padding-right: 40px;
+}
+.field
+{
+    text-align: right;  
+    padding: 10px;
+   
+}
+div.right {
+    padding-top: 10px;
+   
+}
+left 
+{
+    width: 70%;
+}
+
+.field label {
+    flex: 1;
+
+}
+.field input {
+    flex: 2;
+    padding: 5px;
+ }   
+.flex-item.right {
+    width: 40%;
+}
+.btn-container {
+    
+    margin-top: 10px;
+  
+}
